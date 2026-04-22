@@ -2,8 +2,17 @@
     font-family: "MapleMono-Italic",  'Courier New', monospace
 } */
 
-/* * 现代深色主题
-*/
+
+/* 修改选中区域的背景颜色 */
+.monaco-editor .selected-text {
+    background-color: rgba(3, 237, 249, 0.548) !important; /* 霓虹青色透明背景 */
+    box-shadow: 0 0 4px rgba(80, 233, 241, 0.651); /* 添加发光外框 */
+}
+
+/* 修改未聚焦时（失去焦点）选中的背景 */
+.monaco-editor .focused .selected-text {
+    background-color: rgba(3, 237, 249, 0.4) !important;
+}
 
 .mtk3 {
     color: #f92aad;
@@ -59,7 +68,7 @@
         0 0 3px #03edf950;
 }
 
-/* 涓嬭竟鏍� */
+/* 下边栏 */
 .monaco-workbench
     .pane-composite-part
     > .header-or-footer
@@ -81,7 +90,7 @@
         0 0 15px #4aa4db75 !important;
 }
 
-/* 鍙充笂瑙掑伐鍏锋爮 */
+/* 右上角工具栏 */
 .monaco-workbench
     .part.editor
     > .content
@@ -93,7 +102,7 @@
         0 0 15px #0a74d3 !important;
 }
 
-/* 涓婅竟鏍弜鎸夐挳 */
+/* 上边栏x按钮 */
 .monaco-workbench
     .part.editor
     > .content
@@ -121,7 +130,7 @@
     filter: drop-shadow(0 0 3px rgba(114, 192, 255, 0.7));
 }
 
-/* 宸﹁竟鏍� */
+/* 左边栏 */
 .monaco-workbench
     .activitybar
     > .content
@@ -134,7 +143,7 @@
     transition: all 0.3s ease;
 }
 
-/* 鍙充笅瑙扻鎸夐挳 */
+/* 右下角X按钮 */
 .codicon-panel-close:before {
     color: rgba(253, 40, 40, 0.764);
     text-shadow: 0 0 8px rgba(253, 40, 40, 0.764),
@@ -150,12 +159,12 @@
     animation: glow 2s infinite alternate;
 }
 
-/* 婊氬姩鏉� */
+/* 滚动条 */
 /* .slider  {
   background: linear-gradient(to bottom, rgba(255, 0, 0, 0.5), rgba(255, 165, 0, 0.5), rgba(255, 255, 0, 0.5), rgba(0, 128, 0, 0.5), rgba(0, 0, 255, 0.5), rgba(75, 0, 130, 0.5), rgba(238, 130, 238, 0.5)) !important;
   transition: background 0.5s ease;
 } */
-/* 缂栬緫鍣ㄦ粴鍔ㄦ潯 */
+/* 编辑器滚动条 */
 div:nth-of-type(3)
     > div
     > div
@@ -172,7 +181,7 @@ div:nth-of-type(3)
     border-radius: 10px;
 }
 
-/* 鏂囦欢绠＄悊鍣ㄦ粴鍔ㄦ潯*/
+/* 文件管理器滚动条*/
 div.monaco-grid-view
     > div
     > div
@@ -195,7 +204,7 @@ div.monaco-grid-view
     border-radius: 10px;
 }
 
-/* 宸︿笂瑙掕彍鍗� */
+/* 左上角菜单 */
 .menubar-menu-title {
     color: #f939b6 !important;
     text-shadow: 0 0 2px #abba55, 0 0 6px #e705f375, 0 0 2px #a805f375 !important;
@@ -316,7 +325,7 @@ div.monaco-grid-view
     filter: drop-shadow(0 0 5px #03edf9);
 }
 
-/* 缁堢slider */
+/* 终端slider */
 
 .xterm .xterm-scrollable-element > .scrollbar > .slider {
     background: linear-gradient(to bottom, #ff51ff 25%, #2864fc) !important;
